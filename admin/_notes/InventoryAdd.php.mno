@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_staffno" value="name:staff_no;datatype:string" />
+	<infoitem key="UD_icno" value="name:ic_no;datatype:int" />
+	<infoitem key="UD_rcd_Staff" value="name:Id;datatype:int,name:Nama;datatype:string" />
+	<infoitem key="UD_rcd_Company" value="name:Id;datatype:int,name:Nama;datatype:string" />
+</info>

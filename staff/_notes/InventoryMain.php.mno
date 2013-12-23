@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rcd_Inventory" value="name:Id;datatype:int,name:Peralatan;datatype:string,name:Jenis;datatype:string,name:NoSiri;datatype:string,name:Pengeluar;datatype:string,name:Model;datatype:string,name:Spesifikasi;datatype:string,name:TahunBeli;datatype:year,name:IdStaf;datatype:int,name:IdSyarikat;datatype:int" />
+</info>

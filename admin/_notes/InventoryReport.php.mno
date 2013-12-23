@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_staffno" value="name:staff_no;datatype:string" />
+	<infoitem key="UD_icno" value="name:ic_no;datatype:int" />
+	<infoitem key="UD_rcd_Staff" value="name:Id;datatype:int,name:Nama;datatype:string" />
+	<infoitem key="UD_rcd_Company" value="name:Id;datatype:int,name:Nama;datatype:string" />
+	<infoitem key="UD_rcd_Inventory" value="name:Id;datatype:int,name:Peralatan;datatype:string,name:Jenis;datatype:string,name:NoSiri;datatype:string,name:Pengeluar;datatype:string,name:Model;datatype:string,name:Spesifikasi;datatype:string,name:TahunBeli;datatype:year,name:MulaSewa;datatype:date,name:TamatSewa;datatype:date,name:IdStaf;datatype:int,name:IdSyarikat;datatype:int,name:TC;datatype:datetime,name:PC;datatype:int,name:TU;datatype:datetime,name:PU;datatype:int" />
+	<infoitem key="UD_rcd_JenisKerosakan" value="name:Id;datatype:int,name:Keterangan;datatype:string" />
+	<infoitem key="UD_rcd_StatusSelenggara" value="name:Id;datatype:int,name:Keterangan;datatype:string" />
+</info>

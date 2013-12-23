@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rcd_Report" value="name:Id;datatype:int,name:IdPeralatan;datatype:int,name:JenisKerosakan;datatype:string,name:TarikhKerosakan;datatype:date,name:TarikhSelenggara;datatype:date,name:NotaSelenggara;datatype:string,name:Status;datatype:string" />
+</info>

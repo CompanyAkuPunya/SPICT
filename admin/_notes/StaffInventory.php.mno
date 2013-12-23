@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rcd_Staf" value="name:Id;datatype:int,name:Nama;datatype:string,name:NoMykad;datatype:string,name:Unit;datatype:string" />
+	<infoitem key="UD_rcd_StaffInventory" value="name:Id;datatype:int,name:Peralatan;datatype:string,name:Jenis;datatype:string,name:NoSiri;datatype:string,name:Pengeluar;datatype:string,name:Model;datatype:string,name:Spesifikasi;datatype:string,name:Kaedah;datatype:int,name:TahunBeli;datatype:year,name:DeskripsiProjek;datatype:string,name:MulaSewa;datatype:date,name:TamatSewa;datatype:date,name:IdStaf;datatype:int,name:IdSyarikat;datatype:int,name:TC;datatype:datetime,name:PC;datatype:int,name:TU;datatype:datetime,name:PU;datatype:int" />
+</info>

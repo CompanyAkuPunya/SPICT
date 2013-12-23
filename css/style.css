@@ -1,0 +1,99 @@
+body {
+	background-image: url(../images/bg.png);
+}
+td {
+	font: normal 11px Tahoma, Arial;
+	color: #262626;
+}
+.px10 {
+	font: normal 10px Tahoma, Arial;
+}
+.border {
+	border: 1px solid #E8EED6;
+}
+.green_block {
+	font: bold 10px Tahoma, Arial;
+	color: #99CD01;
+}
+.green {
+	color: #658700;
+}
+.green_dark {
+	color: #030;
+}
+.white {
+	color: #FFFFFF;
+}
+.RED {
+	color: #C00;
+}
+a {
+	font: normal 11px Tahoma, Arial;
+	color: #030;
+	text-decoration: none;
+}
+.Yellow {
+	font: normal 9px Tahoma, Arial;
+	color: #FF9;
+	text-shadow:#000;
+}
+.posted {
+	font: normal 9px Tahoma, Arial;
+	color: #666;
+	text-shadow:#000;
+}
+.Grey {
+	color: #666;
+	text-shadow:#000;
+}
+.lightGreen {
+	color: #8CFE70;
+	text-shadow:#000;
+}
+.dark_green {
+	font: normal 9px Tahoma, Arial;
+	color: #363;
+	text-shadow:#000;
+}
+.orange {
+	font: normal 9px Tahoma, Arial;
+	color: #F60;
+	text-shadow:#000;
+}
+a:hover {
+	text-decoration: underline;
+}
+input.text {
+	padding:2px;
+	border:1px solid #CCC;;
+	font: normal 1em Verdana, sans-serif;
+	color:#000;
+    text-align: left;
+	width:300px;
+}
+
+select {
+	padding:2px;
+	border:1px solid #CCC;;
+	font: normal 1em Verdana, sans-serif;
+	color:#000;
+    text-align: left;
+	width:300px;
+}
+textarea {
+	width:300px;
+	height:70px;
+	padding:2px;
+	font-family: Verdana, sans-serif;
+	border:1px solid #CCC;
+	color:#000;
+	display:block;
+	max-width:300px;
+	max-height:300px;
+}
+
+input.button{
+	width:100px;
+	font-weight:bold;
+	padding:2px;
+}

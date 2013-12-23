@@ -1,0 +1,5 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rcd_EditStaf" value="name:Id;datatype:int,name:Nama;datatype:string,name:NoMykad;datatype:string,name:Jantina;datatype:int,name:Unit;datatype:string,name:Jawatan;datatype:string,name:NoTel;datatype:int,name:NoHp;datatype:int,name:Email;datatype:string,name:NoBilik;datatype:string,name:Username;datatype:string,name:Password;datatype:string" />
+	<infoitem key="UD_rcd_EditCompany" value="name:Id;datatype:int,name:Nama;datatype:string,name:Alamat;datatype:string,name:NoTel;datatype:int,name:Email;datatype:string,name:Contact1_Nama;datatype:string,name:Contact1_NoTel;datatype:int,name:Contact1_NoHp;datatype:int,name:Contact1_Email;datatype:string,name:Contact2_Nama;datatype:string,name:Contact2_NoTel;datatype:int,name:Contact2_NoHp;datatype:int,name:Contact2_Email;datatype:string,name:Contact3_Nama;datatype:string,name:Contact3_NoTel;datatype:int,name:Contact3_NoHp;datatype:int,name:Contact3_Email;datatype:string" />
+</info>

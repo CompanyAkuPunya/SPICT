@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_rcd_Staf" value="name:Id;datatype:int,name:Nama;datatype:string,name:NoMykad;datatype:string,name:Unit;datatype:string" />
+</info>
