@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Jan 28, 2014 at 11:01 AM
+-- Generation Time: Jan 28, 2014 at 06:44 PM
 -- Server version: 5.5.32
 -- PHP Version: 5.4.19
 
@@ -122,6 +122,8 @@ CREATE TABLE IF NOT EXISTS `laporanselenggara` (
   `TarikhSelenggara` date DEFAULT NULL,
   `NotaSelenggara` varchar(255) DEFAULT NULL,
   `Status` varchar(50) DEFAULT NULL,
+  `SLA` int(11) DEFAULT NULL,
+  `Penyelenggara` varchar(255) DEFAULT NULL,
   `TC` datetime DEFAULT NULL,
   `PC` int(11) DEFAULT NULL,
   `TU` datetime DEFAULT NULL,
@@ -134,16 +136,16 @@ CREATE TABLE IF NOT EXISTS `laporanselenggara` (
 -- Dumping data for table `laporanselenggara`
 --
 
-INSERT INTO `laporanselenggara` (`Id`, `IdPeralatan`, `JenisKerosakan`, `TarikhLaporan`, `KeteranganKerosakan`, `TarikhSelenggara`, `NotaSelenggara`, `Status`, `TC`, `PC`, `TU`, `PU`) VALUES
-(1, 1, '1', '2013-11-06', 'MASUK AIR', '2013-11-13', 'TIDAK BOLEH DIBAIKI', '1', '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(2, 2, '2', '2013-11-20', 'popopo', '2013-11-12', 'qweqwr', '2', '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(3, 1, '1', '2013-11-06', 'Kerosakan maksima', '2013-11-19', 'wrqwrq', '2', '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
-(4, 1, '2', '2013-12-16', 'rosak rosak', NULL, NULL, '-1', NULL, NULL, NULL, NULL),
-(5, 1, '1', '2013-12-11', 'rosak', NULL, NULL, '-1', NULL, NULL, NULL, NULL),
-(6, 1, '2', '2013-12-10', 'keterangn kerosakan', NULL, NULL, '-1', NULL, NULL, NULL, NULL),
-(7, 1, '1', '2013-12-18', 'Tidak Boleh Open', '2013-12-17', 'da siap di baiki', '1', NULL, NULL, NULL, NULL),
-(8, 7, NULL, NULL, NULL, '2013-12-20', 'Telah Selesai', '1', NULL, NULL, NULL, NULL),
-(9, 7, '1', '2013-12-19', 'ink tidak keluar', NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+INSERT INTO `laporanselenggara` (`Id`, `IdPeralatan`, `JenisKerosakan`, `TarikhLaporan`, `KeteranganKerosakan`, `TarikhSelenggara`, `NotaSelenggara`, `Status`, `SLA`, `Penyelenggara`, `TC`, `PC`, `TU`, `PU`) VALUES
+(1, 1, '1', '2013-11-06', 'MASUK AIR', '2013-11-13', 'TIDAK BOLEH DIBAIKI', '1', NULL, NULL, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
+(2, 2, '2', '2013-11-20', 'popopo', '2013-11-12', 'qweqwr', '2', NULL, NULL, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
+(3, 1, '1', '2013-11-06', 'Kerosakan maksima', '2013-11-19', 'wrqwrq', '2', NULL, NULL, '0000-00-00 00:00:00', 0, '0000-00-00 00:00:00', 0),
+(4, 1, '2', '2013-12-16', 'rosak rosak', NULL, NULL, '-1', NULL, NULL, NULL, NULL, NULL, NULL),
+(5, 1, '1', '2013-12-11', 'rosak', NULL, NULL, '-1', NULL, NULL, NULL, NULL, NULL, NULL),
+(6, 1, '2', '2013-12-10', 'keterangn kerosakan', NULL, NULL, '-1', NULL, NULL, NULL, NULL, NULL, NULL),
+(7, 1, '1', '2013-12-18', 'Tidak Boleh Open', '2013-12-17', 'da siap di baiki', '1', NULL, NULL, NULL, NULL, NULL, NULL),
+(8, 7, '1', '2014-01-01', 'laporan', '2013-12-20', 'Telah Selesai', '1', NULL, NULL, NULL, NULL, NULL, NULL),
+(9, 7, '1', '2013-12-19', 'ink tidak keluar', '2014-01-08', 'nota', '2', NULL, NULL, NULL, NULL, NULL, NULL);
 
 -- --------------------------------------------------------
 

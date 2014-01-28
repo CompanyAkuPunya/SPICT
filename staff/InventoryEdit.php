@@ -304,6 +304,7 @@ function MM_swapImage() { //v3.0
                     <option value="-1" <?php if (!(strcmp(-1, $row_rcd_EditInventory['Jenis']))) {echo "selected=\"selected\"";} ?>>Sila Pilih Jenis Peralatan</option>
                     <option value="Software" <?php if (!(strcmp("Software", $row_rcd_EditInventory['Jenis']))) {echo "selected=\"selected\"";} ?>>Software</option>
                     <option value="Hardware" <?php if (!(strcmp("Hardware", $row_rcd_EditInventory['Jenis']))) {echo "selected=\"selected\"";} ?>>Hardware</option>
+                    <option value="Service" <?php if (!(strcmp("Service", $row_rcd_EditInventory['Jenis']))) {echo "selected=\"selected\"";} ?>>Service</option>
                     </select>
                   <br /><span class="selectInvalidMsg">Sila Pilih Jenis Peralatan</span>
                   <span class="selectRequiredMsg">Sila Pilih Jenis Peralatan</span></span></td>

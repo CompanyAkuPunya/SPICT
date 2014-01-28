@@ -38,14 +38,16 @@ if (isset($_SERVER['QUERY_STRING'])) {
 }
 
 if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
-  $insertSQL = sprintf("INSERT INTO laporanselenggara (IdPeralatan, JenisKerosakan, TarikhLaporan, KeteranganKerosakan, TarikhSelenggara, NotaSelenggara, Status) VALUES (%s, %s, %s, %s, %s, %s, %s)",
+  $insertSQL = sprintf("INSERT INTO laporanselenggara (IdPeralatan, JenisKerosakan, TarikhLaporan, KeteranganKerosakan, TarikhSelenggara, NotaSelenggara, Status, SLA, Penyelenggara) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)",
                        GetSQLValueString($_POST['IdPeralatan'], "int"),
                        GetSQLValueString($_POST['JenisKerosakan'], "int"),
                        GetSQLValueString($_POST['TarikhLaporan'], "date"),
                        GetSQLValueString($_POST['KeteranganKerosakan'], "text"),
                        GetSQLValueString($_POST['TarikhSelenggara'], "date"),
                        GetSQLValueString($_POST['NotaSelenggara'], "text"),
-                       GetSQLValueString($_POST['Status'], "text"));
+                       GetSQLValueString($_POST['Status'], "text"),
+                       GetSQLValueString($_POST['sla'], "int"),
+                       GetSQLValueString($_POST['penyelenggara'], "text"));
 
   mysql_select_db($database_dataconn, $dataconn);
   $Result1 = mysql_query($insertSQL, $dataconn) or die(mysql_error());
@@ -296,9 +298,9 @@ function MM_swapImage() { //v3.0
                     <td class="toprig">&nbsp;</td>
                   </tr>
                   <tr>
-                    <td width="3%" rowspan="19" class="cenlef">&nbsp;</td>
+                    <td width="3%" rowspan="21" class="cenlef">&nbsp;</td>
                     <th colspan="3" align="center">LAPORAN PENYELENGGARAAN</th>
-                    <td width="3%" rowspan="19" class="cenrig">&nbsp;</td>
+                    <td width="3%" rowspan="21" class="cenrig">&nbsp;</td>
                   </tr>
                   <tr>
                     <td colspan="3"><hr /></td>
@@ -444,6 +446,27 @@ do {
                       <textarea name="NotaSelenggara" class="text" id="NotaSelenggara"></textarea>
                     </td>
                     </tr>
+                     <tr>
+                       <td>SLA (Hari Bekerja)</td>
+                       <td>:</td>
+                       <td><select name="sla" id="sla">
+                         <option value="5">5</option>
+                         <option value="10">10</option>
+                         <option value="15">15</option>
+                         <option value="20">20</option>
+                         <option value="25">25</option>
+                         <option value="30">30</option>
+                         <option value="35">35</option>
+                         <option value="40">40</option>
+                         <option value="45">45</option>
+                         <option value="50">50</option>
+                       </select></td>
+                     </tr>
+                     <tr>
+                       <td>Penyelenggara</td>
+                       <td>:</td>
+                       <td> <input type="text" name="penyelenggara" id="penyelenggara" class="text" /></td>
+                     </tr>
                   <tr>
                     <td colspan="3">&nbsp;</td>
                     </tr>

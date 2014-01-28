@@ -38,7 +38,7 @@ if (isset($_SERVER['QUERY_STRING'])) {
 }
 
 if ((isset($_POST["MM_update"])) && ($_POST["MM_update"] == "form1")) {
-  $updateSQL = sprintf("UPDATE laporanselenggara SET IdPeralatan=%s, JenisKerosakan=%s, TarikhLaporan=%s, KeteranganKerosakan=%s, TarikhSelenggara=%s, NotaSelenggara=%s, Status=%s WHERE Id=%s",
+  $updateSQL = sprintf("UPDATE laporanselenggara SET IdPeralatan=%s, JenisKerosakan=%s, TarikhLaporan=%s, KeteranganKerosakan=%s, TarikhSelenggara=%s, NotaSelenggara=%s, Status=%s, SLA=%s, Penyelenggara=%s WHERE Id=%s",
                        GetSQLValueString($_POST['IdPeralatan'], "int"),
                        GetSQLValueString($_POST['JenisKerosakan'], "text"),
                        GetSQLValueString($_POST['TarikhLaporan'], "date"),
@@ -46,6 +46,8 @@ if ((isset($_POST["MM_update"])) && ($_POST["MM_update"] == "form1")) {
                        GetSQLValueString($_POST['TarikhSelenggara'], "date"),
                        GetSQLValueString($_POST['NotaSelenggara'], "text"),
                        GetSQLValueString($_POST['Status'], "text"),
+                       GetSQLValueString($_POST['sla'], "int"),
+                       GetSQLValueString($_POST['penyelenggara'], "text"),
                        GetSQLValueString($_POST['IdLaporan'], "int"));
 
   mysql_select_db($database_dataconn, $dataconn);
@@ -296,16 +298,17 @@ function MM_swapImage() { //v3.0
           <form action="<?php echo $editFormAction; ?>" id="form1" name="form1" method="POST">
           <table width="50%" border="0" align="center">
               <tr>
-                <td><table width="100%" align="center" id="formtable">
+                <td><?php echo $row_rcd_Inventory['Jenis']; ?>
+                  <table width="100%" align="center" id="formtable">
                   <tr>
                     <td class="toplef">&nbsp;</td>
                     <td colspan="3" class="topmid">&nbsp;</td>
                     <td class="toprig">&nbsp;</td>
                   </tr>
                   <tr>
-                    <td width="3%" rowspan="19" class="cenlef">&nbsp;</td>
+                    <td width="3%" rowspan="21" class="cenlef">&nbsp;</td>
                     <th colspan="3" align="center">KEMASKINI LAPORAN PENYELENGGARAAN</th>
-                    <td width="3%" rowspan="19" class="cenrig">&nbsp;</td>
+                    <td width="3%" rowspan="21" class="cenrig">&nbsp;</td>
                   </tr>
                   <tr>
                     <td colspan="3"><hr /></td>
@@ -451,6 +454,27 @@ do {
                       <textarea name="NotaSelenggara" class="text" id="NotaSelenggara"><?php echo $row_rcd_Report['NotaSelenggara']; ?></textarea>
                     </td>
                     </tr>
+                    <tr>
+                       <td>SLA (Hari Bekerja)</td>
+                       <td>:</td>
+                       <td><select name="sla" id="sla">
+                         <option value="5">5</option>
+                         <option value="10">10</option>
+                         <option value="15">15</option>
+                         <option value="20">20</option>
+                         <option value="25">25</option>
+                         <option value="30">30</option>
+                         <option value="35">35</option>
+                         <option value="40">40</option>
+                         <option value="45">45</option>
+                         <option value="50">50</option>
+                       </select></td>
+                     </tr>
+                     <tr>
+                       <td>Penyelenggara</td>
+                       <td>:</td>
+                       <td> <input type="text" name="penyelenggara" id="penyelenggara" class="text" /></td>
+                     </tr>
                   <tr>
                     <td colspan="3">&nbsp;</td>
                     </tr>

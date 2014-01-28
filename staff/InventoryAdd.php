@@ -293,6 +293,7 @@ function MM_swapImage() { //v3.0
                     <option value="-1">Sila Pilih Jenis Peralatan</option>
                     <option value="Software">Software</option>
                     <option value="Hardware">Hardware</option>
+                     <option value="Service">Service</option>
                     </select>
                   <br /><span class="selectInvalidMsg">Sila Pilih Jenis Peralatan</span>
                   <span class="selectRequiredMsg">Sila Pilih Jenis Peralatan</span></span></td>
