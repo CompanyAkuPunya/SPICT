@@ -64,7 +64,7 @@ if (isset($_GET['Id'])) {
   $colname_rcd_Staff = $_GET['Id'];
 }
 mysql_select_db($database_dataconn, $dataconn);
-$query_rcd_Staff = sprintf("SELECT Nama, Unit FROM staf WHERE Id = %s", GetSQLValueString($colname_rcd_Staff, "int"));
+$query_rcd_Staff = sprintf("SELECT * FROM staf WHERE Id = %s", GetSQLValueString($colname_rcd_Staff, "int"));
 $rcd_Staff = mysql_query($query_rcd_Staff, $dataconn) or die(mysql_error());
 $row_rcd_Staff = mysql_fetch_assoc($rcd_Staff);
 $totalRows_rcd_Staff = mysql_num_rows($rcd_Staff);
@@ -193,12 +193,12 @@ function MM_swapImage() { //v3.0
                 <th scope="col" align="center">Jenis Peralatan</th>
                 <th scope="col" align="center">Pengeluar</th>
                 <th scope="col" align="center">Model</th>
-                <th scope="col" align="center">&nbsp;</th>
+                <th scope="col" align="center" width="50px">&nbsp;</th>
               </tr>
               </thead>
               <?php $counter = ($startRow_rcd_StaffInventory + 1);  do { ?>
                 <tr>
-    <td><?php echo $counter ?></td>
+    <td align="center"><?php echo $counter ?></td>
     <td><?php echo $row_rcd_StaffInventory['Jenis']; ?></td>
     <td><?php echo $row_rcd_StaffInventory['Pengeluar']; ?></td>
     <td><?php echo $row_rcd_StaffInventory['Model']; ?></td>

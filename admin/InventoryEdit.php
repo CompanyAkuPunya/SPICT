@@ -291,9 +291,9 @@ function MM_swapImage() { //v3.0
                 <th scope="col" class="toprig">&nbsp;</th>
               </tr>
               <tr>
-                <th width="3%" rowspan="17" scope="col" class="cenlef">&nbsp;</th>
+                <th width="3%" rowspan="19" scope="col" class="cenlef">&nbsp;</th>
                 <th colspan="3" scope="col">KEMASKINI MAKLUMAT PERALATAN</th>
-                <th width="3%" rowspan="17" scope="col" class="cenrig">&nbsp;</th>
+                <th width="3%" rowspan="19" scope="col" class="cenrig">&nbsp;</th>
               </tr>
               <tr>
                 <th colspan="3" scope="col"><hr /></th>
@@ -361,11 +361,11 @@ function MM_swapImage() { //v3.0
                 <td><strong>Kaedah</strong></td>
                 <td><strong>:</strong></td>
                 <td>
-                 <input type="radio" name="beliSewa" id="radioBeli" value="1" onClick="validateBeliSewa();"/>
+                 <input <?php if (!(strcmp($row_rcd_EditInventory['Kaedah'],"1"))) {echo "checked=\"checked\"";} ?> type="radio" name="beliSewa" id="radioBeli" value="1" onClick="validateBeliSewa();"/>
                   Pembelian</label>
-                  <input type="radio" name="beliSewa" id="radioSewa" value="2" onClick="validateBeliSewa();"/>
+                  <input <?php if (!(strcmp($row_rcd_EditInventory['Kaedah'],"2"))) {echo "checked=\"checked\"";} ?> type="radio" name="beliSewa" id="radioSewa" value="2" onClick="validateBeliSewa();"/>
                   Sewaan
-                  <input type="radio" name="beliSewa" id="radioProjek" value="3" onClick="validateBeliSewa();"/>
+                  <input <?php if (!(strcmp($row_rcd_EditInventory['Kaedah'],"3"))) {echo "checked=\"checked\"";} ?> type="radio" name="beliSewa" id="radioProjek" value="3" onClick="validateBeliSewa();"/>
                   Projek</td>
                 </tr>
               <tr>
@@ -379,7 +379,7 @@ function MM_swapImage() { //v3.0
                  <tr>
                 <td><strong>Deskripsi Projek</strong></td>
                 <td><strong>:</strong></td>
-                <td><textarea name="DeskripsiProjek" id="DeskripsiProjek" class="text" disabled="disabled" ></textarea></td>
+                <td><textarea name="DeskripsiProjek" id="DeskripsiProjek" class="text" disabled="disabled" ><?php echo $row_rcd_EditInventory['DeskripsiProjek']; ?></textarea></td>
                 </tr>
                <tr>
                  <td><strong>Mula Sewa</strong></td>

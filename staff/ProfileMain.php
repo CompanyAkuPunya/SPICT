@@ -152,9 +152,9 @@ function MM_swapImage() { //v3.0
                     <td class="toprig">&nbsp;</td>
                   </tr>
                   <tr>
-                    <td width="3%" rowspan="25" class="cenlef">&nbsp;</td>
+                    <td width="3%" rowspan="21" class="cenlef">&nbsp;</td>
                     <th colspan="3" align="center">PROFIL STAF</th>
-                    <td width="3%" rowspan="25" class="cenrig">&nbsp;</td>
+                    <td width="3%" rowspan="21" class="cenrig">&nbsp;</td>
                   </tr>
                   <tr>
                     <td colspan="3"><hr /></td>
@@ -253,22 +253,6 @@ function MM_swapImage() { //v3.0
                     <td><strong>Twitter</strong></td>
                     <td><strong>:</strong></td>
                     <td><?php echo $row_rcd_Staff['Twitter']; ?></td>
-                  </tr>
-                  <tr>
-                    <td colspan="3">&nbsp;</td>
-                    </tr>
-                  <tr>
-                    <td><strong>Password</strong></td>
-                    <td><strong>:</strong></td>
-                    <td><?php echo $row_rcd_Staff['Password']; ?></td>
-                    </tr>
-                    <tr>
-                    <td colspan="3">&nbsp;</td>
-                    </tr>
-                    <tr>
-                    <td><strong>Gambar</strong></td>
-                    <td><strong>:</strong></td>
-                    <td>&nbsp;</td>
                   </tr>
                   <tr>
                     <td>&nbsp;</td>

@@ -57,8 +57,8 @@ if ((isset($_POST["MM_update"])) && ($_POST["MM_update"] == "form1")) {
                        GetSQLValueString($_POST['Bahagian'], "text"),
                        GetSQLValueString($_POST['Jawatan'], "text"),
                        GetSQLValueString($_POST['NoBilik'], "text"),
+                       GetSQLValueString($_POST['Email'], "text"),
                        GetSQLValueString($_POST['NoMykad'], "text"),
-                       GetSQLValueString($_POST['Password'], "text"),
                        GetSQLValueString($_POST['id'], "int"));
 
   mysql_select_db($database_dataconn, $dataconn);
@@ -295,9 +295,9 @@ function MM_swapImage() { //v3.0
                     <td class="toprig">&nbsp;</td>
                   </tr>
                   <tr>
-                    <td width="3%" rowspan="25" class="cenlef">&nbsp;</td>
+                    <td width="3%" rowspan="21" class="cenlef">&nbsp;</td>
                     <th colspan="3" align="center">KEMASKINI MAKLUMAT STAF</th>
-                    <td width="3%" rowspan="25" class="cenrig">&nbsp;</td>
+                    <td width="3%" rowspan="21" class="cenrig">&nbsp;</td>
                   </tr>
                   <tr>
                     <td colspan="3"><hr /></td>
@@ -446,7 +446,7 @@ do {
                     <td><strong>:</strong></td>
                     <td><span id="sprytextfield11">
                       <input name="Poskod" type="text" class="text" id="Poskod" value="<?php echo $row_rcd_EditStaf['Poskod']; ?>" />
-                      <span class="textfieldRequiredMsg">Sila Masukkan Poskod</span></span></td>
+<span class="textfieldRequiredMsg">Sila Masukkan Poskod</span></span></td>
                   </tr>
                   <tr>
                     <td><strong>Facebook</strong></td>
@@ -457,25 +457,6 @@ do {
                     <td><strong>Twitter</strong></td>
                     <td><strong>:</strong></td>
                     <td><input name="Twitter" type="text" class="text" id="Twitter" value="<?php echo $row_rcd_EditStaf['Twitter']; ?>" /></td>
-                  </tr>
-                  <tr>
-                    <td colspan="3">&nbsp;</td>
-                    </tr>
-                  <tr>
-                    <td><strong>Password</strong></td>
-                    <td><strong>:</strong></td>
-                    <td><span id="sprytextfield10">
-                    <input name="Password" type="text" class="text" id="Password" value="<?php echo $row_rcd_EditStaf['Password']; ?>" />
-                    <span class="textfieldRequiredMsg">Sila masukkan Password</span>
-                    <span class="textfieldMinCharsMsg">Sila masukkan sekurangnya 6 karakter</span></span></td>
-                    </tr>
-                    <tr>
-                    <td colspan="3">&nbsp;</td>
-                    </tr>
-                    <tr>
-                    <td><strong>Gambar</strong></td>
-                    <td><strong>:</strong></td>
-                    <td><input type="file" name="Gambar" id="Gambar" /></td>
                   </tr>
                   <tr>
                     <td>&nbsp;</td>
@@ -507,7 +488,6 @@ var sprytextfield5 = new Spry.Widget.ValidationTextField("sprytextfield5");
 var sprytextfield6 = new Spry.Widget.ValidationTextField("sprytextfield6");
 var sprytextfield7 = new Spry.Widget.ValidationTextField("sprytextfield7", "email");
 var sprytextfield8 = new Spry.Widget.ValidationTextField("sprytextfield8");
-var sprytextfield10 = new Spry.Widget.ValidationTextField("sprytextfield10", "none", {minChars:6});
 var spryradio1 = new Spry.Widget.ValidationRadio("spryradio1");
 //-->
          </script>

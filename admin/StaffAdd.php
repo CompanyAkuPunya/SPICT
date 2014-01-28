@@ -38,7 +38,7 @@ if (isset($_SERVER['QUERY_STRING'])) {
 }
 
 if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
-  $insertSQL = sprintf("INSERT INTO staf (Nama, NoMykad, Jantina, TarikhLahir, NoTel, NoHp, Email, Alamat, Poskod, Gambar, Facebook, Twitter, Pejabat, Negeri, Cawangan, Bahagian, Jawatan, NoBilik, Username, Password) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)",
+  $insertSQL = sprintf("INSERT INTO staf (Nama, NoMykad, Jantina, TarikhLahir, NoTel, NoHp, Email, Alamat, Poskod, Facebook, Twitter, Pejabat, Negeri, Cawangan, Bahagian, Jawatan, NoBilik, Username, Password) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)",
                        GetSQLValueString($_POST['Nama'], "text"),
                        GetSQLValueString($_POST['NoMykad'], "text"),
                        GetSQLValueString($_POST['Jantina'], "int"),
@@ -48,7 +48,6 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
                        GetSQLValueString($_POST['Email'], "text"),
                        GetSQLValueString($_POST['alamat'], "text"),
                        GetSQLValueString($_POST['Poskod'], "int"),
-                       GetSQLValueString($_POST['Gambar'], "text"),
                        GetSQLValueString($_POST['Facebook'], "text"),
                        GetSQLValueString($_POST['Twitter'], "text"),
                        GetSQLValueString($_POST['Pejabat'], "int"),
@@ -57,8 +56,8 @@ if ((isset($_POST["MM_insert"])) && ($_POST["MM_insert"] == "form1")) {
                        GetSQLValueString($_POST['Bahagian'], "text"),
                        GetSQLValueString($_POST['Jawatan'], "text"),
                        GetSQLValueString($_POST['NoBilik'], "text"),
-                       GetSQLValueString($_POST['NoMykad'], "text"),
-                       GetSQLValueString($_POST['Password'], "text"));
+                       GetSQLValueString($_POST['Email'], "text"),
+                       GetSQLValueString($_POST['NoMykad'], "text"));
 
   mysql_select_db($database_dataconn, $dataconn);
   $Result1 = mysql_query($insertSQL, $dataconn) or die(mysql_error());
@@ -288,9 +287,9 @@ function MM_swapImage() { //v3.0
                     <td class="toprig">&nbsp;</td>
                   </tr>
                   <tr>
-                    <td width="3%" rowspan="25" class="cenlef">&nbsp;</td>
+                    <td width="3%" rowspan="21" class="cenlef">&nbsp;</td>
                     <th colspan="3" align="center">TAMBAH MAKLUMAT STAF</th>
-                    <td width="3%" rowspan="25" class="cenrig">&nbsp;</td>
+                    <td width="3%" rowspan="21" class="cenrig">&nbsp;</td>
                   </tr>
                   <tr>
                     <td colspan="3"><hr /></td>
@@ -453,30 +452,11 @@ do {
                     <td><strong>:</strong></td>
                     <td><input type="text" name="Twitter" id="Twitter" class="text" /></td>
                   </tr>
-                  <tr>
-                    <td colspan="3">&nbsp;</td>
-                    </tr>           
-                  <tr>
-                    <td><strong>Password</strong></td>
-                    <td><strong>:</strong></td>
-                    <td><span id="sprytextfield10">
-                      <input type="text" name="Password" id="Password" class="text" />
-                      <span class="textfieldRequiredMsg">Sila masukkan Password</span>
-                      <span class="textfieldMinCharsMsg">Sila masukkan sekurangnya 6 karakter</span></span></td>
-                    </tr>
-                  <tr>
-                    <td colspan="3">&nbsp;</td>
+                   <tr>
+                    <td class="botlef">&nbsp;</td>
+                    <td colspan="3" class="botmid">&nbsp;</td>
+                    <td class="botrig">&nbsp;</td>
                   </tr>
-                  <tr>
-                    <td><strong>Gambar</strong></td>
-                    <td><strong>:</strong></td>
-                    <td><input type="file" name="Gambar" id="Gambar" /></td>
-                  </tr>
-                  <tr>
-                    <td>&nbsp;</td>
-                    <td colspan="3">&nbsp;</td>
-                    <td>&nbsp;</td>
-                    </tr>
                   <tr>
                     <td class="botlef">&nbsp;</td>
                     <td colspan="3" class="botmid">&nbsp;</td>
@@ -502,7 +482,6 @@ var sprytextfield5 = new Spry.Widget.ValidationTextField("sprytextfield5");
 var sprytextfield6 = new Spry.Widget.ValidationTextField("sprytextfield6");
 var sprytextfield7 = new Spry.Widget.ValidationTextField("sprytextfield7", "email");
 var sprytextfield8 = new Spry.Widget.ValidationTextField("sprytextfield8");
-var sprytextfield10 = new Spry.Widget.ValidationTextField("sprytextfield10", "none", {minChars:6});
 //-->
         </script>
 	<script type="text/javascript" src="../js/datepickr/datepickr.js"></script>
