@@ -101,10 +101,10 @@ function MM_swapImage() { //v3.0
         	<td colspan="4" align="right">&nbsp;</td>
         </tr>
          <tr>
-        	<td align="center"><a href="/spict/admin/CawanganMain.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image11','','/spict/images/Data_Cawangan2.png',1)"><img src="/spict/images/Data_Cawangan1.png" name="Image11" width="100" height="100" border="0" id="Image11" /></a></td>
-        	<td align="center"><a href="/spict/admin/JenisKerosakanMain.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image8','','/spict/images/Data_JenisKerosakan2.png',1)"><img src="/spict/images/Data_JenisKerosakan1.png" name="Image8" width="100" height="100" border="0" id="Image8" /></a></td>
-        	<td align="center"><a href="/spict/admin/StatusSelenggaraMain.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image9','','/spict/images/Data_StatusSelenggara2.png',1)"><img src="/spict/images/Data_StatusSelenggara1.png" name="Image9" width="100" height="100" border="0" id="Image9" /></a></td>
-        	<td align="center"><a href="/spict/admin/ServerMain.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image10','','/spict/images/Data_EmailServer2.png',1)"><img src="/spict/images/Data_EmailServer1.png" name="Image10" width="100" height="100" border="0" id="Image10" /></a></td>
+        	<td align="center"><a href="../admin/CawanganMain.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image11','','../images/Data_Cawangan2.png',1)"><img src="../images/Data_Cawangan1.png" name="Image11" width="100" height="100" border="0" id="Image11" /></a></td>
+        	<td align="center"><a href="../admin/JenisKerosakanMain.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image8','','../images/Data_JenisKerosakan2.png',1)"><img src="../images/Data_JenisKerosakan1.png" name="Image8" width="100" height="100" border="0" id="Image8" /></a></td>
+        	<td align="center"><a href="../admin/StatusSelenggaraMain.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image9','','../images/Data_StatusSelenggara2.png',1)"><img src="../images/Data_StatusSelenggara1.png" name="Image9" width="100" height="100" border="0" id="Image9" /></a></td>
+        	<td align="center"><a href="../admin/ServerMain.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image10','','../images/Data_EmailServer2.png',1)"><img src="../images/Data_EmailServer1.png" name="Image10" width="100" height="100" border="0" id="Image10" /></a></td>
          </tr>
         </table>
         <br/><br/>

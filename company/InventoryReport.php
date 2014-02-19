@@ -110,7 +110,7 @@ $totalRows_rcd_StatusSelenggara = mysql_num_rows($rcd_StatusSelenggara);
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>INVENTORY</title>
+<title>Jabatan Penerangan Malaysia</title>
 <!-- InstanceEndEditable -->
 <link rel="stylesheet" type="text/css" href="../css/style.css">
 <link rel="stylesheet" type="text/css" href="../css/table_style.css"/>

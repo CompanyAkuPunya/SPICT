@@ -47,7 +47,7 @@ if (isset($_GET['pageNum_rcd_Branches'])) {
 $startRow_rcd_Branches = $pageNum_rcd_Branches * $maxRows_rcd_Branches;
 
 mysql_select_db($database_dataconn, $dataconn);
-$query_rcd_Branches = "SELECT A.Id,A.Negeri,A.Kod,A.Keterangan,B.Keterangan As NamaNegeri FROM cawangan A LEFT JOIN negeri B ON A.Negeri = b.Id ORDER BY Negeri ASC";
+$query_rcd_Branches = "SELECT A.Id,A.Negeri,A.Kod,A.Keterangan,B.Keterangan As NamaNegeri FROM cawangan A LEFT JOIN negeri B ON A.Negeri = B.Id ORDER BY Negeri ASC";
 $query_limit_rcd_Branches = sprintf("%s LIMIT %d, %d", $query_rcd_Branches, $startRow_rcd_Branches, $maxRows_rcd_Branches);
 $rcd_Branches = mysql_query($query_limit_rcd_Branches, $dataconn) or die(mysql_error());
 $row_rcd_Branches = mysql_fetch_assoc($rcd_Branches);
@@ -213,10 +213,10 @@ function MM_swapImage() { //v3.0
 
 <table width="20%" border="0" cellpadding="1" align="center">
     <tr>
-    <td align="center" width="25%"><a href="<?php printf("%s?pageNum_rcd_Branches=%d%s", $currentPage, 0, $queryString_rcd_Branches); ?>"><img src=	"/bas2/images/paging_far_left.png" name="first" width="24" height="24" border="0" id="first" /></a></td>
-    <td align="center" width="25%"><a href="<?php printf("%s?pageNum_rcd_Branches=%d%s", $currentPage, max(0, $pageNum_rcd_Branches - 1), $queryString_rcd_Branches); ?>"><img src="/bas2/images/paging_left.png" name="previous" width="24" height="24" border="0" id="previous" /></a></td>
-    <td align="center" width="25%"><a href="<?php printf("%s?pageNum_rcd_Branches=%d%s", $currentPage, min($totalPages_rcd_Branches, $pageNum_rcd_Branches + 1), $queryString_rcd_Branches); ?>"><img src="/bas2/images/paging_right.png" name="next" width="24" height="24" border="0" id="next" /></a></td>
-    <td align="center" width="25%"><a href="<?php printf("%s?pageNum_rcd_Branches=%d%s", $currentPage, $totalPages_rcd_Branches, $queryString_rcd_Branches); ?>"><img src="/bas2/images/paging_far_right.png" alt="" name="last" width="24" height="24" border="0" id="last" /></a></td>
+    <td align="center" width="25%"><a href="<?php printf("%s?pageNum_rcd_Branches=%d%s", $currentPage, 0, $queryString_rcd_Branches); ?>"><img src=	"../images/paging_far_left.png" name="first" width="24" height="24" border="0" id="first" /></a></td>
+    <td align="center" width="25%"><a href="<?php printf("%s?pageNum_rcd_Branches=%d%s", $currentPage, max(0, $pageNum_rcd_Branches - 1), $queryString_rcd_Branches); ?>"><img src="../images/paging_left.png" name="previous" width="24" height="24" border="0" id="previous" /></a></td>
+    <td align="center" width="25%"><a href="<?php printf("%s?pageNum_rcd_Branches=%d%s", $currentPage, min($totalPages_rcd_Branches, $pageNum_rcd_Branches + 1), $queryString_rcd_Branches); ?>"><img src="../images/paging_right.png" name="next" width="24" height="24" border="0" id="next" /></a></td>
+    <td align="center" width="25%"><a href="<?php printf("%s?pageNum_rcd_Branches=%d%s", $currentPage, $totalPages_rcd_Branches, $queryString_rcd_Branches); ?>"><img src="../images/paging_far_right.png" alt="" name="last" width="24" height="24" border="0" id="last" /></a></td>
     </tr>
 </table>
           </form>

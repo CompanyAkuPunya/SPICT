@@ -49,9 +49,9 @@ mysql_select_db($database_dataconn, $dataconn);
 if (isset($_POST['Search'])) {
 $query_rcd_Report = sprintf("SELECT A.Id,A.IdPeralatan, A.JenisKerosakan, A.TarikhLaporan, A.Status, B.Peralatan, 
 C.Nama As NamaStaf, D.Nama As NamaSyarikat, E.Keterangan As Kerosakan, F.Keterangan As StatusSelenggara
-FROM laporanselenggara A LEFT JOIN Peralatan B ON A.IdPeralatan =B.Id 
-LEFT JOIN Staf C ON B.IdStaf = C.Id
-LEFT JOIN Syarikat D ON B.IdSyarikat = D.Id
+FROM laporanselenggara A LEFT JOIN peralatan B ON A.IdPeralatan =B.Id 
+LEFT JOIN staf C ON B.IdStaf = C.Id
+LEFT JOIN syarikat D ON B.IdSyarikat = D.Id
 LEFT JOIN jeniskerosakan E ON A.JenisKerosakan = E.Id
 LEFT JOIN statusselenggara F ON A.Status = F.Id
 WHERE B.Peralatan like %s or C.Nama like %s or D.Nama like %s and C.Id = %s
@@ -63,7 +63,7 @@ GetSQLValueString($_SESSION['IdStaff'], "int"));
 }else{
 $query_rcd_Report = sprintf("SELECT A.Id,A.IdPeralatan, A.JenisKerosakan, A.TarikhLaporan,A.TarikhSelenggara, A.Status, B.Peralatan, 
 C.Nama As NamaStaf, D.Nama As NamaSyarikat, E.Keterangan As Kerosakan, F.Keterangan As StatusSelenggara
-FROM laporanselenggara A LEFT JOIN Peralatan B ON A.IdPeralatan =B.Id 
+FROM laporanselenggara A LEFT JOIN peralatan B ON A.IdPeralatan =B.Id 
 LEFT JOIN staf C ON B.IdStaf = C.Id
 LEFT JOIN syarikat D ON B.IdSyarikat = D.Id
 LEFT JOIN jeniskerosakan E ON A.JenisKerosakan = E.Id
@@ -236,10 +236,10 @@ function MM_swapImage() { //v3.0
 
 <table width="20%" border="0" cellpadding="1" align="center">
     <tr>
-    <td align="center" width="25%"><a href="<?php printf("%s?pageNum_rcd_Report=%d%s", $currentPage, 0, $queryString_rcd_Report); ?>"><img src=	"/bas2/images/paging_far_left.png" name="first" width="24" height="24" border="0" id="first" /></a></td>
-    <td align="center" width="25%"><a href="<?php printf("%s?pageNum_rcd_Report=%d%s", $currentPage, max(0, $pageNum_rcd_Report - 1), $queryString_rcd_Report); ?>"><img src="/bas2/images/paging_left.png" name="previous" width="24" height="24" border="0" id="previous" /></a></td>
-    <td align="center" width="25%"><a href="<?php printf("%s?pageNum_rcd_Report=%d%s", $currentPage, min($totalPages_rcd_Report, $pageNum_rcd_Report + 1), $queryString_rcd_Report); ?>"><img src="/bas2/images/paging_right.png" name="next" width="24" height="24" border="0" id="next" /></a></td>
-    <td align="center" width="25%"><a href="<?php printf("%s?pageNum_rcd_Report=%d%s", $currentPage, $totalPages_rcd_Report, $queryString_rcd_Report); ?>"><img src="/bas2/images/paging_far_right.png" alt="" name="last" width="24" height="24" border="0" id="last" /></a></td>
+    <td align="center" width="25%"><a href="<?php printf("%s?pageNum_rcd_Report=%d%s", $currentPage, 0, $queryString_rcd_Report); ?>"><img src=	"../images/paging_far_left.png" name="first" width="24" height="24" border="0" id="first" /></a></td>
+    <td align="center" width="25%"><a href="<?php printf("%s?pageNum_rcd_Report=%d%s", $currentPage, max(0, $pageNum_rcd_Report - 1), $queryString_rcd_Report); ?>"><img src="../images/paging_left.png" name="previous" width="24" height="24" border="0" id="previous" /></a></td>
+    <td align="center" width="25%"><a href="<?php printf("%s?pageNum_rcd_Report=%d%s", $currentPage, min($totalPages_rcd_Report, $pageNum_rcd_Report + 1), $queryString_rcd_Report); ?>"><img src="../images/paging_right.png" name="next" width="24" height="24" border="0" id="next" /></a></td>
+    <td align="center" width="25%"><a href="<?php printf("%s?pageNum_rcd_Report=%d%s", $currentPage, $totalPages_rcd_Report, $queryString_rcd_Report); ?>"><img src="../images/paging_far_right.png" alt="" name="last" width="24" height="24" border="0" id="last" /></a></td>
     </tr>
 </table>
 <br /><br />

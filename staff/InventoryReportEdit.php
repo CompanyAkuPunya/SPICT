@@ -298,7 +298,7 @@ function MM_swapImage() { //v3.0
           <form action="<?php echo $editFormAction; ?>" id="form1" name="form1" method="POST">
           <table width="50%" border="0" align="center">
               <tr>
-                <td><?php echo $row_rcd_Inventory['Jenis']; ?>
+                <td>
                   <table width="100%" align="center" id="formtable">
                   <tr>
                     <td class="toplef">&nbsp;</td>

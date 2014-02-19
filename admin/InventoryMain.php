@@ -222,10 +222,10 @@ function MM_swapImage() { //v3.0
 
 <table width="20%" border="0" cellpadding="1" align="center">
     <tr>
-    <td align="center" width="25%"><a href="<?php printf("%s?pageNum_rcd_Inventory=%d%s", $currentPage, 0, $queryString_rcd_Inventory); ?>"><img src=	"/bas2/images/paging_far_left.png" name="first" width="24" height="24" border="0" id="first" /></a></td>
-    <td align="center" width="25%"><a href="<?php printf("%s?pageNum_rcd_Inventory=%d%s", $currentPage, max(0, $pageNum_rcd_Inventory - 1), $queryString_rcd_Inventory); ?>"><img src="/bas2/images/paging_left.png" name="previous" width="24" height="24" border="0" id="previous" /></a></td>
-    <td align="center" width="25%"><a href="<?php printf("%s?pageNum_rcd_Inventory=%d%s", $currentPage, min($totalPages_rcd_Inventory, $pageNum_rcd_Inventory + 1), $queryString_rcd_Inventory); ?>"><img src="/bas2/images/paging_right.png" name="next" width="24" height="24" border="0" id="next" /></a></td>
-    <td align="center" width="25%"><a href="<?php printf("%s?pageNum_rcd_Inventory=%d%s", $currentPage, $totalPages_rcd_Inventory, $queryString_rcd_Inventory); ?>"><img src="/bas2/images/paging_far_right.png" alt="" name="last" width="24" height="24" border="0" id="last" /></a></td>
+    <td align="center" width="25%"><a href="<?php printf("%s?pageNum_rcd_Inventory=%d%s", $currentPage, 0, $queryString_rcd_Inventory); ?>"><img src=	"../images/paging_far_left.png" name="first" width="24" height="24" border="0" id="first" /></a></td>
+    <td align="center" width="25%"><a href="<?php printf("%s?pageNum_rcd_Inventory=%d%s", $currentPage, max(0, $pageNum_rcd_Inventory - 1), $queryString_rcd_Inventory); ?>"><img src="../images/paging_left.png" name="previous" width="24" height="24" border="0" id="previous" /></a></td>
+    <td align="center" width="25%"><a href="<?php printf("%s?pageNum_rcd_Inventory=%d%s", $currentPage, min($totalPages_rcd_Inventory, $pageNum_rcd_Inventory + 1), $queryString_rcd_Inventory); ?>"><img src="../images/paging_right.png" name="next" width="24" height="24" border="0" id="next" /></a></td>
+    <td align="center" width="25%"><a href="<?php printf("%s?pageNum_rcd_Inventory=%d%s", $currentPage, $totalPages_rcd_Inventory, $queryString_rcd_Inventory); ?>"><img src="../images/paging_far_right.png" alt="" name="last" width="24" height="24" border="0" id="last" /></a></td>
     </tr>
 </table>
 <br /><br />

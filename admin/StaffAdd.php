@@ -94,8 +94,8 @@ $totalRows_rcd_Negeri = mysql_num_rows($rcd_Negeri);
 <!-- InstanceBeginEditable name="head" -->
 <script src="../SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
 <script src="../SpryAssets/SpryValidationRadio.js" type="text/javascript"></script>
-<script src="/spict/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
-<script src="/spict/SpryAssets/SpryValidationTextarea.js" type="text/javascript"></script>
+<script src="../SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<script src="../SpryAssets/SpryValidationTextarea.js" type="text/javascript"></script>
 <link href="../SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css" />
 <link href="../SpryAssets/SpryValidationRadio.css" rel="stylesheet" type="text/css" />
         	<style type="text/css">
@@ -196,8 +196,8 @@ $totalRows_rcd_Negeri = mysql_num_rows($rcd_Negeri);
 				color: #363636;
 			}
 		</style>
-<link href="/spict/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css" />
-<link href="/spict/SpryAssets/SpryValidationTextarea.css" rel="stylesheet" type="text/css" />
+<link href="../SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css" />
+<link href="../SpryAssets/SpryValidationTextarea.css" rel="stylesheet" type="text/css" />
 <!-- InstanceEndEditable -->
 <script type="text/javascript">
 <!--

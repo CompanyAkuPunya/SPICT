@@ -106,10 +106,12 @@ $totalRows_rcd_Cawangan = mysql_num_rows($rcd_Cawangan);
 <!-- InstanceBeginEditable name="head" -->
 <script src="../SpryAssets/SpryValidationTextField.js" type="text/javascript"></script>
 <script src="../SpryAssets/SpryValidationRadio.js" type="text/javascript"></script>
-<script src="/spict/SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
-<script src="/spict/SpryAssets/SpryValidationTextarea.js" type="text/javascript"></script>
+<script src="../SpryAssets/SpryValidationSelect.js" type="text/javascript"></script>
+<script src="../SpryAssets/SpryValidationTextarea.js" type="text/javascript"></script>
 <link href="../SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css" />
 <link href="../SpryAssets/SpryValidationRadio.css" rel="stylesheet" type="text/css" />
+<link href="../SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css" />
+<link href="../SpryAssets/SpryValidationTextarea.css" rel="stylesheet" type="text/css" />
         	<style type="text/css">
 			.calendar {
 				font-family: 'Trebuchet MS', Tahoma, Verdana, Arial, sans-serif;
@@ -208,8 +210,6 @@ $totalRows_rcd_Cawangan = mysql_num_rows($rcd_Cawangan);
 				color: #363636;
 			}
 		</style>
-<link href="/spict/SpryAssets/SpryValidationSelect.css" rel="stylesheet" type="text/css" />
-<link href="/spict/SpryAssets/SpryValidationTextarea.css" rel="stylesheet" type="text/css" />
 <!-- InstanceEndEditable -->
 <script type="text/javascript">
 <!--

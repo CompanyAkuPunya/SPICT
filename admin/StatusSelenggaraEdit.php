@@ -74,8 +74,8 @@ $totalRows_rcd_Status = mysql_num_rows($rcd_Status);
 <link rel="stylesheet" type="text/css" href="../css/table_style.css"/>
 <!-- InstanceBeginEditable name="head" -->
 
-<script src="/spict/SpryAssets/SpryValidationTextarea.js" type="text/javascript"></script>
-<link href="/spict/SpryAssets/SpryValidationTextarea.css" rel="stylesheet" type="text/css" />
+<script src="../SpryAssets/SpryValidationTextarea.js" type="text/javascript"></script>
+<link href="../SpryAssets/SpryValidationTextarea.css" rel="stylesheet" type="text/css" />
 <!-- InstanceEndEditable -->
 <script type="text/javascript">
 <!--

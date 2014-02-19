@@ -38,11 +38,7 @@ if (isset($_SERVER['QUERY_STRING'])) {
 }
 
 if ((isset($_POST["MM_update"])) && ($_POST["MM_update"] == "form1")) {
-  $updateSQL = sprintf("UPDATE laporanselenggara SET IdPeralatan=%s, JenisKerosakan=%s, TarikhLaporan=%s, KeteranganKerosakan=%s, TarikhSelenggara=%s, NotaSelenggara=%s, Status=%s, SLA=%s, Penyelenggara=%s WHERE Id=%s",
-                       GetSQLValueString($_POST['IdPeralatan'], "int"),
-                       GetSQLValueString($_POST['JenisKerosakan'], "text"),
-                       GetSQLValueString($_POST['TarikhLaporan'], "date"),
-                       GetSQLValueString($_POST['KeteranganKerosakan'], "text"),
+  $updateSQL = sprintf("UPDATE laporanselenggara SET TarikhSelenggara=%s, NotaSelenggara=%s, Status=%s, SLA=%s, Penyelenggara=%s WHERE Id=%s",
                        GetSQLValueString($_POST['TarikhSelenggara'], "date"),
                        GetSQLValueString($_POST['NotaSelenggara'], "text"),
                        GetSQLValueString($_POST['Status'], "text"),
@@ -110,7 +106,7 @@ $totalRows_rcd_StatusSelenggara = mysql_num_rows($rcd_StatusSelenggara);
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <!-- InstanceBeginEditable name="doctitle" -->
-<title>INVENTORY</title>
+<title>Jabatan Penerangan Malaysia</title>
 <!-- InstanceEndEditable -->
 <link rel="stylesheet" type="text/css" href="../css/style.css">
 <link rel="stylesheet" type="text/css" href="../css/table_style.css"/>

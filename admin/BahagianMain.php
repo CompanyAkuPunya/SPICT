@@ -138,10 +138,10 @@ function MM_swapImage() { //v3.0
 
 <table width="20%" border="0" cellpadding="1" align="center">
     <tr>
-    <td align="center" width="25%"><img src=	"/bas2/images/paging_far_left.png" name="first" width="24" height="24" border="0" id="first" /></td>
-    <td align="center" width="25%"><img src="/bas2/images/paging_left.png" name="previous" width="24" height="24" border="0" id="previous" /></td>
-    <td align="center" width="25%"><img src="/bas2/images/paging_right.png" name="next" width="24" height="24" border="0" id="next" /></td>
-    <td align="center" width="25%"><img src="/bas2/images/paging_far_right.png" alt="" name="last" width="24" height="24" border="0" id="last" /></td>
+    <td align="center" width="25%"><img src="../images/paging_far_left.png" name="first" width="24" height="24" border="0" id="first" /></td>
+    <td align="center" width="25%"><img src="../images/paging_left.png" name="previous" width="24" height="24" border="0" id="previous" /></td>
+    <td align="center" width="25%"><img src="../images/paging_right.png" name="next" width="24" height="24" border="0" id="next" /></td>
+    <td align="center" width="25%"><img src="../images/paging_far_right.png" alt="" name="last" width="24" height="24" border="0" id="last" /></td>
     </tr>
 </table>
           </form>

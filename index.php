@@ -46,8 +46,8 @@ if (isset($_POST['username'])) {
   $loginUsername=$_POST['username'];
   $password=$_POST['password'];
   $MM_fldUserAuthorization = "";
-  $MM_redirectLoginSuccess = "/space/staff/ProfileMain.php";
-  $MM_redirectLoginFailed = "login.php";
+  $MM_redirectLoginSuccess = "staff/ProfileMain.php";
+  $MM_redirectLoginFailed = "Login.php";
   $MM_redirecttoReferrer = false;
   mysql_select_db($database_dataconn, $dataconn);
   
@@ -112,7 +112,7 @@ if (isset($_POST['username'])) {
     <td><table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#3399FF">
       <tr>
         <td>&nbsp;</td>
-        <td align="center" width="20%" height="40"><a href="login.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('staf','','images/menu_staf2.png',1)"><img src="images/menu_staf.png" name="staf" width="102" height="58" border="0" id="staf" /></a></td>
+        <td align="center" width="20%" height="40"><a href="index.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('staf','','images/menu_staf2.png',1)"><img src="images/menu_staf.png" name="staf" width="102" height="58" border="0" id="staf" /></a></td>
         <td align="center" width="20%" height="40"><a href="company_login.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('syarikat','','images/menu_syarikat2.png',1)"><img src="images/menu_syarikat.png" name="syarikat" width="102" height="58" border="0" id="syarikat" /></a></td>
         <td align="center" width="20%" height="40"><a href="admin_login.php" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('admin','','images/menu_admin2.png',1)"><img src="images/menu_admin.png" name="admin" width="102" height="58" border="0" id="admin" /></a></td>
         <td>&nbsp;</td>

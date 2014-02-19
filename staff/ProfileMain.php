@@ -42,7 +42,7 @@ $query_rcd_Staff = sprintf("SELECT A.Id,A.Pejabat, A.Bahagian, A.Jawatan, A.NoBi
 						   B.Keterangan As NamaNegeri, C.Keterangan As NamaCawangan
 						   FROM staf  A 
 						   LEFT JOIN negeri B ON A.Negeri=B.Id 
-						   LEFT JOIN Cawangan C ON A.Cawangan=C.Id 
+						   LEFT JOIN cawangan C ON A.Cawangan=C.Id 
 						   WHERE A.Username = %s", GetSQLValueString($colname_rcd_Staff, "text"));
 $rcd_Staff = mysql_query($query_rcd_Staff, $dataconn) or die(mysql_error());
 $row_rcd_Staff = mysql_fetch_assoc($rcd_Staff);
